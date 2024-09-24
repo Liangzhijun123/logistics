@@ -16,34 +16,42 @@ const Nav = () => {
         {/* Left section */}
         <div className="flex gap-[10px] items-center">
           <img src="/image/logo.svg"></img>
-          <p>MILESTONE GROUP LOGISTICS </p>
+          <p className="font-Inter font-medium text-[20px]">
+            MILESTONE GROUP LOGISTICS{" "}
+          </p>
         </div>
 
         {/* Navigation links */}
         <div className="flex gap-[50px] ">
-          <a href="/" className="">
+          <a href="/" className="font-Inter text-[16px] text-nowrap">
             Home
           </a>
-          <a href="/about-us" className="">
+          <a href="/about-us" className="font-Inter text-[16px] text-nowrap">
             About Us
           </a>
-          <a href="/blogs" className="">
+          <a href="/blogs" className="font-Inter text-[16px] text-nowrap">
             Blogs
           </a>
-          <a href="/careers" className="">
+          <a href="/careers" className="font-Inter text-[16px] text-nowrap">
             Careers
           </a>
-          <a href="/contact-us" className="">
+          <a href="/contact-us" className="font-Inter text-[16px] text-nowrap">
             Contact Us
           </a>
         </div>
 
         {/* Right section */}
         <div className="flex  gap-[20px]">
-          <a href="#signin" className="">
+          <a
+            href="#signin"
+            className="w-[139px] h-[38px] flex justify-center p-1 rounded-[10px] bg-[#333333] text-white hover:bg-[#111111]"
+          >
             Sign In
           </a>
-          <a href="#register" className="">
+          <a
+            href="#register"
+            className="w-[139px] h-[38px] flex justify-center p-1 rounded-[10px] bg-[#333333] text-white hover:bg-[#111111]"
+          >
             Register
           </a>
         </div>
@@ -52,7 +60,12 @@ const Nav = () => {
       {/* Mobile navigation */}
       <div className="md:hidden flex flex-row justify-between items-center px-[16px] py-[12px]">
         {/* Lantern text */}
-        <p className="text-white font-Sora text-[24px] font-bold">Lantern</p>
+        <div className="flex gap-[10px] items-center">
+          <img src="/image/logo.svg"></img>
+          <p className="font-Inter font-medium text-[20px]">
+            MILESTONE GROUP LOGISTICS{" "}
+          </p>
+        </div>
 
         {/* Hamburger icon */}
         <button onClick={toggleMobileMenu} className="ml-auto">
@@ -66,27 +79,33 @@ const Nav = () => {
 
       {/* Dropdown menu */}
       {showMobileMenu && (
-        <div className="md:hidden flex flex-col absolute right-0 w-[40%]  p-[16px] z-30">
-          <a href="/" className="">
+        <div className="md:hidden flex flex-col absolute right-0 w-[40%]  p-[16px] z-30 bg-white shadow-custom-blur rounded-md gap-[20px]">
+          <a href="/" className="font-Inter text-[16px]">
             Home
           </a>
-          <a href="/about-us" className="">
+          <a href="/about-us" className="font-Inter text-[16px]">
             About Us
           </a>
-          <a href="/blogs" className="">
+          <a href="/blogs" className="font-Inter text-[16px]">
             Blogs
           </a>
-          <a href="/careers" className="">
+          <a href="/careers" className="font-Inter text-[16px]">
             Careers
           </a>
-          <a href="/contact-us" className="">
+          <a href="/contact-us" className="font-Inter text-[16px]">
             Contact Us
           </a>
 
-          <a href="#signin" className="">
+          <a
+            href="#signin"
+            className="w-[120px] h-[38px] flex justify-center p-1 rounded-[10px] bg-[#333333] text-white hover:bg-[#111111]"
+          >
             Sign In
           </a>
-          <a href="#register" className="">
+          <a
+            href="#register"
+            className="w-[120px] h-[38px] flex justify-center p-1 rounded-[10px] bg-[#333333] text-white hover:bg-[#111111]"
+          >
             Register
           </a>
         </div>

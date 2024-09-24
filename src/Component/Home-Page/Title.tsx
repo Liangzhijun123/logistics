@@ -7,15 +7,15 @@ const Title = () => {
         {/* Image with absolute positioning */}
         <img
           src="/image/title-image.svg"
-          className="w-full h-auto  object-cover object-center"
+          className="w-full md:h-auto h-[600px]  object-cover object-center"
         ></img>
 
         {/* Text content centered on the image */}
         <div className="absolute inset-0 flex flex-col justify-center items-center gap-[51px]">
-          <p className="font-Inter font-semibold text-[50px]">
+          <p className="font-Inter font-semibold md:text-[50px] text-[32px] text-center">
             Welcome to MileStone Group Logistic
           </p>
-          <p className="text-white font-medium font-Inter text-[24px]">
+          <p className="text-white font-medium font-Inter md:text-[24px] text-[18px] text-center">
             Efficient, reliable package delivery tracking
           </p>
           <div className="flex flex-row gap-[20px]">

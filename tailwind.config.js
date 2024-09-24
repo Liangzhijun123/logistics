@@ -7,7 +7,9 @@ module.exports = {
         'Sora': ['Sora', 'sans-serif'],
         'Inter': ['Inter', 'sans-serif'],
       },
-   
+      boxShadow: {
+        'custom-blur': '5px 4px 40px rgba(0, 0, 0, 0.5)', 
+      },
     },
   },
   plugins: [],

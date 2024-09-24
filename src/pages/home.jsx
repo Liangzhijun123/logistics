@@ -1,3 +1,4 @@
+import Body from "../Component/Home-Page/Body.tsx";
 import Title from "../Component/Home-Page/Title.tsx";
 
 const Home = () => {
@@ -5,6 +6,7 @@ const Home = () => {
         <>
             <div>
                 <Title />
+                <Body />
             </div>
         </>
      );
